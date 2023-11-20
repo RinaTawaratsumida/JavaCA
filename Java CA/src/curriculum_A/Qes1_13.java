@@ -23,19 +23,19 @@ public class Qes1_13 {
 		l = 10000; //値を代入
 		
 		float f; // 宣言
-		f = 0; // 初期化
+		f = 0f; // 初期化
 		f = 9.5f; //値を代入
 		
 		double d; // 宣言
-		d = 0; // 初期化
+		d = 0.0; // 初期化
 		d = 10.5; //値を代入
 		
 		char c; // 宣言
-		c = 0; // 初期化
+		c = ' '; // 初期化
 		c = 'a'; //値を代入
 		
 		String Str; // 宣言
-		Str = ""; // 初期化
+		Str = " "; // 初期化
 		Str = "ハロー"; //値を代入
 		
 		boolean boo; // 宣言
@@ -75,12 +75,13 @@ public class Qes1_13 {
 		
 		//問題7
 		double bmi = weight / ((height / 100) * (height / 100)); // BMIの数式を宣言
-		System.out.println("BMIは" + bmi + "です"); //文字列と数値を連結してコンソール出力
+		System.out.println("BMIは" + Math.floor(bmi) + "です"); //文字列と数値を連結してコンソール出力
 		
 		
 		//問題8
+		// 値と文字を代入
 		name = "鈴木一郎";
-		age = 25;
+		age = 24;
 		height = 168.5;
 		weight = 64.2;
 		food = "オムライス";
@@ -96,21 +97,27 @@ public class Qes1_13 {
 		
 		//問題9
 		System.out.println("初めまして" + name + "です"); // 文字列と変数を連結してコンソール出力
-		System.out.println("年齢は" + (age + age) + "歳です"); // 文字列と変数を連結してコンソール出力
-		System.out.println("身長は" + (height + height) + "cmです"); // 文字列と変数を連結してコンソール出力
-		System.out.println("体重は" + (weight + weight) + "kgです"); // 文字列と変数を連結してコンソール出力
+		age += age; // 自己代入
+		System.out.println("年齢は" + age + "歳です"); // 文字列と変数を連結してコンソール出力
+		height += height; // 自己代入
+		System.out.println("身長は" + height + "cmです"); // 文字列と変数を連結してコンソール出力
+		weight += weight; // 自己代入
+		System.out.println("体重は" + weight + "kgです"); // 文字列と変数を連結してコンソール出力
 		System.out.println("好きな食べ物は" + food + "です"); // 文字列と変数を	連結してコンソール出力
 		
-		double bmi2 = (weight + weight) / (((height + height) / 100) * ((height + height) / 100)); // BMIの数式を宣言
+		double bmi2 = weight / (height / 100) * (height / 100); // BMIの数式を宣言
 		System.out.println("BMIは" + ((double) Math.round(bmi2 * 100.0)) / 100.0 + "です"); // BMIを出力
 		
 		
 		//問題10
+		age = 24;
 		System.out.println((age>=25)?"true":""); //25歳以上ならtrueを出力
 		
 		//問題11
 		String strAge = Integer.toString(age); // 年齢を文字列型に型変換
+		height = 168.5;
 		String strHeight = Double.toString(height); // 身長を文字列型に型変換
+		weight = 64.2;
 		String strWeight = Double.toString(weight); //体重を文字列型に型変換
 		System.out.println(strAge + strHeight + strWeight); //年齢と身長を体重を連結してコンソール出力
 		

@@ -23,7 +23,7 @@ public class Qes1_13 {
 		l = 10000; //値を代入
 		
 		float f; // 宣言
-		f = 0f; // 初期化
+		f = 0.0f; // 初期化
 		f = 9.5f; //値を代入
 		
 		double d; // 宣言
@@ -31,11 +31,11 @@ public class Qes1_13 {
 		d = 10.5; //値を代入
 		
 		char c; // 宣言
-		c = ' '; // 初期化
+		c = '\u0000'; // 初期化
 		c = 'a'; //値を代入
 		
 		String Str; // 宣言
-		Str = " "; // 初期化
+		Str = null; // 初期化
 		Str = "ハロー"; //値を代入
 		
 		boolean boo; // 宣言
@@ -111,7 +111,7 @@ public class Qes1_13 {
 		
 		//問題10
 		age = 24;
-		System.out.println((age>=25)?"true":""); //25歳以上ならtrueを出力
+		System.out.println((age>=25)?"true":"false"); //25歳以上ならtrueを出力
 		
 		//問題11
 		String strAge = Integer.toString(age); // 年齢を文字列型に型変換
@@ -129,7 +129,7 @@ public class Qes1_13 {
 		
 		//問題13
 		//　年齢が25歳以上で身長が160cm以上ならtrueを出力
-		System.out.println(numAge >= 25 && numHeight >= 160?"true":""); 
+		System.out.println(numAge >= 25 && numHeight >= 160?"true":"false"); 
 		
 	}
 }

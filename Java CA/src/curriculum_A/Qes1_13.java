@@ -128,8 +128,8 @@ public class Qes1_13 {
 		System.out.println(numHeight); // 整数型の身長をコンソール出力
 		
 		//問題13
-		//　年齢が25歳以上で身長が160cm以上ならtrueを出力
-		System.out.println(numAge >= 25 && numHeight >= 160?"true":"false"); 
+		//　年齢が25歳以上もしくは身長が160cm以上ならtrueを出力
+		System.out.println(numAge >= 25 || numHeight >= 160?"true":"false"); 
 		
 	}
 }

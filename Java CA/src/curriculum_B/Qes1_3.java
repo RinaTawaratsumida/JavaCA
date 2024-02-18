@@ -27,23 +27,22 @@ public class Qes1_3 {
 			} else if (name.length() >= 11) {
 				// 「名前を10文字以内にしてください」と出力
 				System.out.println("名前を10文字以内にしてください");
-				
+			
+				// 半角英数字でない場合
+			} else if (!(name.matches("^[A-Za-z0-9]+$"))){
+					// 「半角英数字のみで名前を入力してください」出力
+					System.out.println("半角英数字のみで名前を入力してください");
 			} else {
 				// 上記の条件に当てはまらなければ終わり
 				bln = false;
 			}
-			
 		}
 		
 		// 「ユーザー名～」の文章を出力
 		System.out.println("ユーザー名" + name + "を登録しました");
 		
 		
-		// 半角英数字が入力されなかった場合
-		if (name.matches("[0-9a-zA-Z]")){
-			// 「半角英数字のみで名前を入力してください」出力
-			System.out.println("半角英数字のみで名前を入力してください");
-		}
+		
 		
 		// 乱数を宣言
 		Random rand = new Random();
@@ -97,5 +96,6 @@ public class Qes1_3 {
 			 	System.out.println("勝つまでにかかった合計回数は" + count + "回です");
 			 } 
 		}
+		sc1.close();
 	}
 }		

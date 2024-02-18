@@ -98,6 +98,8 @@ public class Qes7 {
 		ave = sum2/4;
 		// 全体の平均点は〇点ですと文章出力
 		System.out.println("全体の平均点は" + String.format("%.2f", ave) + "点です。");
+		
+		scan.close();
 	}
 
 }

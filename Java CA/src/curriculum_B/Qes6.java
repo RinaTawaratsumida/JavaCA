@@ -48,7 +48,7 @@ public class Qes6 {
 			}			
 
 		}
-		
+		scanner.close();
 	}
 
 }
